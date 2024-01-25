@@ -1,18 +1,18 @@
 {
-  "name": "pkg-placeholder",
+  "name": "uniapp-pack",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "packageManager": "pnpm@8.14.0",
   "description": "_description_",
   "author": "kmq116 <coderco@foxmail.com>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/kmq116",
-  "homepage": "https://github.com/kmq116/pkg-placeholder#readme",
+  "homepage": "https://github.com/kmq116/uniapp-pack#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kmq116/pkg-placeholder.git"
+    "url": "git+https://github.com/kmq116/uniapp-pack.git"
   },
-  "bugs": "https://github.com/kmq116/pkg-placeholder/issues",
+  "bugs": "https://github.com/kmq116/uniapp-pack/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
@@ -33,11 +33,17 @@
       ]
     }
   },
+  "bin": {
+    "uniapp-pack": "dist/index.cjs"
+  },
   "files": [
     "dist"
   ],
   "scripts": {
     "build": "unbuild",
+    "test:pack": "node test.js",
+    "link:pack": "pnpm link --global",
+    "install:pack": "pnpm link uniapp-pack --global",
     "dev": "unbuild --stub",
     "lint": "eslint .",
     "prepublishOnly": "nr build",
@@ -46,6 +52,10 @@
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks"
+  },
+  "dependencies": {
+    "json5": "^2.2.3",
+    "zx": "^7.0.8"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.2",
