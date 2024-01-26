@@ -1,7 +1,7 @@
 {
-  "name": "uniapp-pack",
+  "name": "@unipack/core",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "packageManager": "pnpm@8.14.0",
   "description": "uniapp 打包工具",
   "author": "kmq116 <coderco@foxmail.com>",

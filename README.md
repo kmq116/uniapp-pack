@@ -7,21 +7,11 @@
 [![License][license-src]][license-href]
 
 _description_
-
-> **Note**:
-> Replace `uniapp-pack`, `_description_` and `kmq116` globally to use this template.
-
-## Sponsors
-
-<p align="center">
-  <a href="https://cdn.jsdelivr.net/gh/kmq116/static/sponsors.svg">
-    <img src='https://cdn.jsdelivr.net/gh/kmq116/static/sponsors.svg'/>
-  </a>
-</p>
+uniapp 打包前可以用到的小工具，提高打包效率，解放双手
 
 ## License
 
-[MIT](./LICENSE) License © 2023-PRESENT [Anthony Fu](https://github.com/kmq116)
+[MIT](./LICENSE) License © 2023-PRESENT [kmq116](https://github.com/kmq116)
 
 <!-- Badges -->
 
