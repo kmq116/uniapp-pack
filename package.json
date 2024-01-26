@@ -1,7 +1,7 @@
 {
   "name": "uniapp-pack",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "packageManager": "pnpm@8.14.0",
   "description": "_description_",
   "author": "kmq116 <coderco@foxmail.com>",
@@ -54,6 +54,7 @@
     "prepare": "simple-git-hooks"
   },
   "dependencies": {
+    "inquirer": "^9.1.5",
     "json5": "^2.2.3",
     "zx": "^7.0.8"
   },
