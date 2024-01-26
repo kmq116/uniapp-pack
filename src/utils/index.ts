@@ -1,3 +1,6 @@
+import fs from 'node:fs'
+import json5 from 'json5'
+
 /**
  *
  * @param vName
@@ -6,6 +9,10 @@ export function validateVersionName(vName: string): boolean {
   return /^\d+\.\d+\.\d+$/.test(vName)
 }
 
+export async function readJsonFile(filePath: fs.PathOrFileDescriptor) {
+  const rawData = await fs.readFileSync(filePath, 'utf8')
+  return json5.parse(rawData)
+}
 /**
  *
  * @param str
