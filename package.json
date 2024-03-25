@@ -1,5 +1,5 @@
 {
-  "name": "uniapp-pack",
+  "name": "unipack-core",
   "type": "module",
   "version": "0.0.2",
   "packageManager": "pnpm@8.14.0",
